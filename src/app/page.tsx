@@ -141,20 +141,36 @@ export default function Home() {
       </motion.div>
 
       <motion.div
-        className="flex lg:flex-row flex-col mt-5 gap-10 w-full"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } }}
-      >
-        <h3 className="flex">
-        Who we are
-        </h3>
-        <h6 className="flex">
-        Led by Dr. Fred Stevenson, a second-generation chiropractor with decades of experience, our clinic prides itself on offering personalized, professional care. With extensive post-graduate training and a deep commitment to continued education, we ensure that our patients benefit from the latest techniques in chiropractic care.
-        </h6>
-        <h6 className="flex">
-        Whether you are dealing with chronic pain, sports injuries, or pregnancy discomfort, Stevenson Chiropractic Clinic is here to support your journey to better health. We believe in building long-term relationships with our patients and the community, working together to help you feel your best.
-        </h6>
-      </motion.div>
+  className="mt-20"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: 'easeOut' },
+  }}
+>
+  {/* Title */}
+  <h5 className="text-2xl font-semibold mb-2">Testimonials</h5>
+  <hr className="border-t border-black mb-8" />
+
+  {/* Testimonials */}
+  <div className="flex flex-col lg:flex-row gap-10 w-full">
+    <h4 className="flex-1">
+      "Been going here for years and wouldn't go anywhere else. Fred is a genius."
+    </h4>
+    <h4 className="flex-1">
+      "As a Polio survivor, I depend on Fred to keep me mobile. I always leave his place feeling
+      better and happier."
+    </h4>
+    <h4 className="flex-1">
+      "Excellent practitioner... I would highly recommend."
+    </h4>
+    <h4 className="flex-1">
+      "Dr. Fred is a legend. Thanks for your magic hands and caring nature."
+    </h4>
+  </div>
+</motion.div>
+
 
       {/* Project Showcase */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
