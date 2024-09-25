@@ -5,7 +5,7 @@
 
 /* Components */
 .btn {
-  @apply px-3 py-1 rounded-full uppercase text-white transition-colors duration-300;
+  @apply px-5 py-3 rounded-full uppercase text-white transition-colors duration-300;
 }
 
 .btn-primary {

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 interface Project {
   id: number;
@@ -92,6 +93,67 @@ const ProjectsPage: React.FC = () => {
       <p className="text-gray-400 mt-2 mb-10 text-xs">
         * These are some of the projects our team members have worked on in the past. Vortechs does not take credit for the design or development of these projects. All the rights belong to the respective owners.
       </p>
+
+      {/* What We Do */}
+      <motion.div
+        className="bg-[#0049FF] rounded-md p-5 mt-20 mb-20"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.8, ease: "easeOut" },
+        }}
+      >
+        <div className="flex flex-col items-center">
+          <h1 className="satoshi-black text-white">Our Services</h1>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mt-3">
+          <div className="p-4 rounded-md bg-white">
+            <h5 className="font-semibold">Chiropractic Care</h5>
+            <p>
+              Chiropractic care is a patient-centred, non-invasive, hands-on,
+              regulated health care profession focused on your spine, muscles,
+              joints and nervous system.
+              <br />
+              Chiropractors use the best available evidence and clinical
+              expertise to diagnose issues that affect your body movement. They
+              treat them without medication or surgery and prevent them from
+              returning. Chiropractic care can also promote health and improve
+              your quality of life, as well as alleviate pain.{" "}
+            </p>
+          </div>
+          <div className="p-4 rounded-md bg-white">
+            <h5 className="font-semibold">Dry Needling</h5>
+            <p>
+              Involves the use of fine acupuncture needles inserted into the
+              skin to aid release of myofascial trigger points.
+            </p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mt-5">
+          <div className="p-4 rounded-md bg-white">
+            <h5 className="font-semibold">
+              Dynamic Neuromuscular Stabilisation
+            </h5>
+            <p>
+              Encompasses the principles of developmental kinesiology during the
+              first year of life;
+              <br />
+              Defines postural, breathing patterns, and functional joint
+              centration from this neurodevelopmental perspective; and
+              <br />
+              Derives the ideal quality of these functional stereotypes from
+              central (neurological) programs maturing during early postural
+              ontogenesis.
+            </p>
+          </div>
+          <div className="p-4 rounded-md bg-white">
+            <h5 className="font-semibold">Muscle Massage</h5>
+            <p>Enhances muscle recovery and releases stress and tension.</p>
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 };

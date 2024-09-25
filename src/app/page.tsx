@@ -14,7 +14,7 @@ export default function Home() {
           data: [
             {
               attributes: {
-                url: "/images/Stock-Hero.jpg",
+                url: "/images/Chirpractic-Care.jpg",
               },
             },
           ],
@@ -30,7 +30,7 @@ export default function Home() {
           data: [
             {
               attributes: {
-                url: "/images/Stock-Hero.jpg",
+                url: "/images/Dry-Needling.jpg",
               },
             },
           ],
@@ -46,7 +46,7 @@ export default function Home() {
           data: [
             {
               attributes: {
-                url: "/images/Stock-Hero.jpg",
+                url: "/images/Dynamic-Neuromuscular-Stabilisation.jpg",
               },
             },
           ],
@@ -62,7 +62,7 @@ export default function Home() {
           data: [
             {
               attributes: {
-                url: "/images/Stock-Hero.jpg",
+                url: "/images/Muscular-Massage.jpg",
               },
             },
           ],
@@ -74,85 +74,89 @@ export default function Home() {
   return (
     <div>
       <motion.div
-        className=""
-        initial={{ opacity: 0, y: 20 }}
-        animate={{
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.8, ease: "easeOut" },
-        }}
-      >
-        <h1 className="lg:text-7xl md:text-6xl text-4xl uppercase satoshi-regular">
-          Start your journey to better health and reduction of pain today!
-        </h1>
-      </motion.div>
+  className=""
+  initial={{ opacity: 0, y: 20 }}
+  animate={{
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: "easeOut" },
+  }}
+>
+  <h1 className="lg:text-7xl md:text-6xl text-4xl uppercase satoshi-regular">
+    Start your journey to better health and reduction of pain today!
+  </h1>
+</motion.div>
 
-      {/* Image with Overlay Buttons */}
-      <motion.div
-        className="relative mt-10"
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: { duration: 0.8, ease: "easeOut", delay: 0.2 },
-        }}
-      >
-        {/* Rounded Image */}
-        <img
-          src="/images/Stock-Hero.jpg"
-          alt="Chiropractic Care"
-          className="w-full h-auto rounded-lg"
-        />
+{/* Image with Overlay Buttons */}
+<motion.div
+  className="relative mt-10"
+  initial={{ opacity: 0 }}
+  animate={{
+    opacity: 1,
+    transition: { duration: 0.8, ease: "easeOut", delay: 0.2 },
+  }}
+>
+  {/* Rounded Image for Desktop/Tablet */}
+  <img
+    src="/images/Stock-Hero.jpg"
+    alt="Chiropractic Care"
+    className="hidden md:block w-full h-auto rounded-lg"
+  />
+  
+  {/* Rounded Image for Mobile */}
+  <img
+    src="/images/Dr Fred Stevenson - Neck Adjustment.jpg"
+    alt="Chiropractic Care"
+    className="block md:hidden w-full h-auto rounded-lg"
+  />
 
-        {/* Overlay Buttons */}
-        <div className="absolute bottom-4 right-4 flex gap-2.5">
-          <Link href="/call-us" className="btn-extra group">
-            <div className="flex flex-col justify-between h-full">
-              <span className="text-left font-bold text-white">
-                Call us now
-              </span>
-              <svg
-                className="w-6 h-6 text-white transform transition-transform duration-300 group-hover:translate-x-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
-            </div>
-          </Link>
+  {/* Overlay Buttons */}
+  <div className="absolute bottom-4 right-4 flex flex-row gap-2.5">
+    <Link href="/call-us" className="btn-extra group">
+      <div className="flex flex-col justify-between h-full">
+        <span className="text-left font-bold text-white">Call us now</span>
+        <svg
+          className="w-6 h-6 text-white transform transition-transform duration-300 group-hover:translate-x-2"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M13 7l5 5m0 0l-5 5m5-5H6"
+          />
+        </svg>
+      </div>
+    </Link>
 
-          <Link
-            href="https://my-pod-family-and-sports-podiatry.au3.cliniko.com/bookings?business_id=728271673064693041&practitioner_id=728286191547326094#service"
-            className="btn-extra-black group"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="flex flex-col justify-between h-full">
-              <span className="text-left font-bold text-white">
-                Book online
-              </span>
-              <svg
-                className="w-6 h-6 text-white transform transition-transform duration-300 group-hover:translate-x-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
-            </div>
-          </Link>
-        </div>
-      </motion.div>
+    <Link
+      href="https://my-pod-family-and-sports-podiatry.au3.cliniko.com/bookings?business_id=728271673064693041&practitioner_id=728286191547326094#service"
+      className="btn-extra-black group"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div className="flex flex-col justify-between h-full">
+        <span className="text-left font-bold text-white">Book online</span>
+        <svg
+          className="w-6 h-6 text-white transform transition-transform duration-300 group-hover:translate-x-2"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M13 7l5 5m0 0l-5 5m5-5H6"
+          />
+        </svg>
+      </div>
+    </Link>
+  </div>
+</motion.div>
+
       <motion.div
         className="mt-20"
         initial={{ opacity: 0, y: 20 }}
@@ -212,7 +216,7 @@ export default function Home() {
               his son is a chiropractor and surgeon.
             </p>
             <Link href="/about" passHref>
-              <button className="btn btn-secondary mt-4"> {/* Add margin here */}
+              <button className="btn btn-secondary mt-6"> {/* Add margin here */}
                 Discover More About Dr Fred Stevenson
               </button>
             </Link>
@@ -254,6 +258,11 @@ export default function Home() {
               syndrome, rotator cuff injury, sports injuries, pregnancy
               discomfort, and paediatric issues.
             </p>
+            <Link href="/about" passHref>
+              <button className="btn btn-secondary mt-6"> {/* Add margin here */}
+                Discover More About Dr Fred Stevenson
+              </button>
+            </Link>
           </div>
         </motion.div>
 
@@ -268,7 +277,7 @@ export default function Home() {
           className="flex flex-col lg:flex-row items-center gap-10 mt-10"
         >
           <img
-            src="/images/Dr Fred Stevenson - Image.jpg" // Replace with your image path
+            src="/images/Dr Fred Stevenson.jpg" // Replace with your image path
             alt="Education"
             className="w-full lg:w-1/2 h-auto object-cover rounded-lg"
           />
@@ -291,6 +300,11 @@ export default function Home() {
               Association in the 1990s, he introduced mandatory continuing
               education requirements for membership.
             </p>
+            <Link href="/about" passHref>
+              <button className="btn btn-secondary mt-6"> {/* Add margin here */}
+                Discover More About Dr Fred Stevenson
+              </button>
+            </Link>
           </div>
         </motion.div>
       </div>
@@ -337,66 +351,7 @@ export default function Home() {
         })}
       </div>
 
-      {/* What We Do */}
-      <motion.div
-        className="bg-[#0049FF] rounded-md p-5 mt-20 mb-20"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.8, ease: "easeOut" },
-        }}
-      >
-        <div className="flex flex-col items-center">
-          <h1 className="satoshi-black text-white">Our Services</h1>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mt-3">
-          <div className="p-4 rounded-md bg-white">
-            <h5 className="font-semibold">Chiropractic Care</h5>
-            <p>
-              Chiropractic care is a patient-centred, non-invasive, hands-on,
-              regulated health care profession focused on your spine, muscles,
-              joints and nervous system.
-              <br />
-              Chiropractors use the best available evidence and clinical
-              expertise to diagnose issues that affect your body movement. They
-              treat them without medication or surgery and prevent them from
-              returning. Chiropractic care can also promote health and improve
-              your quality of life, as well as alleviate pain.{" "}
-            </p>
-          </div>
-          <div className="p-4 rounded-md bg-white">
-            <h5 className="font-semibold">Dry Needling</h5>
-            <p>
-              Involves the use of fine acupuncture needles inserted into the
-              skin to aid release of myofascial trigger points.
-            </p>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mt-5">
-          <div className="p-4 rounded-md bg-white">
-            <h5 className="font-semibold">
-              Dynamic Neuromuscular Stabilisation
-            </h5>
-            <p>
-              Encompasses the principles of developmental kinesiology during the
-              first year of life;
-              <br />
-              Defines postural, breathing patterns, and functional joint
-              centration from this neurodevelopmental perspective; and
-              <br />
-              Derives the ideal quality of these functional stereotypes from
-              central (neurological) programs maturing during early postural
-              ontogenesis.
-            </p>
-          </div>
-          <div className="p-4 rounded-md bg-white">
-            <h5 className="font-semibold">Muscle Massage</h5>
-            <p>Enhances muscle recovery and releases stress and tension.</p>
-          </div>
-        </div>
-      </motion.div>
+      
       {/* Accreditations */}
       <motion.div
         className="mt-20"
