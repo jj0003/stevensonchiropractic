@@ -1,60 +1,77 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
 const Footer = () => {
   return (
-    <div className="relative bg-black rounded-md py-5 px-10 h-auto md:h-96">
-      {/* Centered title */}
-      <div className="flex justify-center md:justify-start">
-        <h1 className="satoshi-bold lg:text-8xl md:text-6xl text-4xl text-white uppercase tracking-tighter text-center md:text-left">
-          vortechs
-        </h1>
+    <div className="bg-gray-500 text-white py-10 px-10 text-left rounded-t-lg">
+      {/* Footer Top Section */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* Clinic Name at the Top Left */}
+        <div className="col-span-1 md:col-span-1">
+          <h2 className="satoshi-bold text-xl mb-2">
+            Stevenson Chiropractic and Podiatry Clinic
+          </h2>
+        </div>
+
+        {/* Column 1: Address */}
+        <div className="col-span-1">
+          <h3 className="satoshi-bold text-lg mb-2">Address</h3>
+          <a
+            href="https://www.google.com/maps?q=179+Brunker+Road,+Adamstown+NSW+2289+Australia"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#0049FF]"
+          >
+            <p>179 Brunker Road,</p>
+            <p>Adamstown NSW 2289</p>
+            <p>Australia</p>
+          </a>
+        </div>
+
+        {/* Column 2: Contact */}
+        <div className="col-span-1">
+          <h3 className="satoshi-bold text-lg mb-2">Contact</h3>
+          <a href="tel:+61249561144" className="hover:text-[#0049FF]">
+            <p>p: (02) 4956 1144</p>
+          </a>
+          <a href="fax:+61249527461" className="hover:text-[#0049FF]">
+            <p>f: (02) 4952 7461</p>
+          </a>
+          <a
+            href="mailto:fas@stevensonchiropractic.com.au"
+            className="hover:text-[#0049FF]"
+          >
+            <p>fas@stevensonchiropractic.com.au</p>
+          </a>
+        </div>
+
+        {/* Column 3: Opening Hours */}
+        <div className="col-span-1">
+          <h3 className="satoshi-bold text-lg mb-2">Opening Hours</h3>
+          <p>Monday: 8:30am – 6pm</p>
+          <p>Tuesday: 8:30am – 6pm</p>
+          <p>Wednesday: 8:30am – 6pm</p>
+          <p>Thursday: Closed</p>
+          <p>Friday: 8:30am – 12pm</p>
+          <p>Weekends and Public Holidays: Closed</p>
+        </div>
       </div>
 
-      {/* Booking button for larger screens */}
-      <div className="absolute top-5 right-10 hidden md:block">
-        <Link href="https://cal.com/vortechs/30min" className="btn btn-tertiary">
-          Book a free call today
-        </Link>
-      </div>
+      {/* Footer Bottom Section */}
+      <div className="mt-10 flex flex-col md:flex-row justify-between items-center text-sm">
+        {/* Copyright */}
+        <p>© Stevenson Chiropractic and Podiatry Clinic 2024</p>
 
-      {/* Booking button for smaller screens */}
-      <div className="mt-10 text-center md:hidden">
-        <Link href="https://cal.com/vortechs/30min" className="btn btn-tertiary">
-          Book a free call today
-        </Link>
-      </div>
-
-      {/* Bottom Left Text */}
-      <div className="absolute bottom-5 left-10 text-white hidden md:block">
-        <p>© 2024 Vortechs. All rights reserved.</p>
-      </div>
-
-      {/* Bottom Left Text for smaller screens */}
-      <div className="mt-10 text-white text-center md:hidden">
-        <p>© 2024 Vortechs. All rights reserved.</p>
-      </div>
-
-      {/* Bottom Right Text */}
-      <div className="absolute bottom-5 right-10 text-white hidden md:block">
-        <Link href="/privacy-policy" className="hover:text-blue-400">
-          Privacy Policy
-        </Link>{" "}
-        |{" "}
-        <Link href="/terms-of-service" className="hover:text-blue-400">
-          Terms of Service
-        </Link>
-      </div>
-
-      {/* Bottom Right Text for smaller screens */}
-      <div className="mt-4 text-white text-center md:hidden">
-        <Link href="/privacy-policy" className="hover:text-blue-400">
-          Privacy Policy
-        </Link>{" "}
-        |{" "}
-        <Link href="/terms-of-service" className="hover:text-blue-400">
-          Terms of Service
-        </Link>
+        {/* Links */}
+        <div className="mt-4 md:mt-0">
+          <Link href="/terms-and-conditions" className="hover:text-[#0049FF]">
+            Terms & Conditions
+          </Link>{" "}
+          |{" "}
+          <Link href="/privacy-policy" className="hover:text-[#0049FF]">
+            Privacy Policy
+          </Link>
+        </div>
       </div>
     </div>
   );

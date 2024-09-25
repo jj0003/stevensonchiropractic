@@ -1,15 +1,15 @@
 // "@/components/Navigation.tsx"
 "use client";
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import React, { useState } from "react";
+import Link from "next/link";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="mx-auto px-4 py-2 flex items-center justify-between">
+    <nav className="sticky top-0 z-50 bg-white">
+      <div className="mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <h1 className="text-2xl font-bold">Stevenson Chiropractic</h1>
 
@@ -26,7 +26,10 @@ const Navigation = () => {
             </Link>
           </li>
           <li>
-            <Link href="/services" className="text-gray-700 hover:text-blue-500">
+            <Link
+              href="/services"
+              className="text-gray-700 hover:text-blue-500"
+            >
               Services
             </Link>
           </li>

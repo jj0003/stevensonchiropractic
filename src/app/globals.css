@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* Components */
 .btn {
   @apply px-3 py-1 rounded-full uppercase text-white transition-colors duration-300;
@@ -12,7 +13,7 @@
 }
 
 .btn-secondary {
-  @apply bg-black hover:bg-[#0049FF] tracking-wider text-xs;
+  @apply bg-[#0049FF] hover:bg-black tracking-wider text-xs;
 }
 
 .btn-tertiary {
