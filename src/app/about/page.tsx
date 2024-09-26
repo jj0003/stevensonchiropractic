@@ -36,38 +36,46 @@ export default function About() {
 
       {/* Accreditations */}
       <motion.div
-        className="mt-20"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.8, ease: "easeOut" },
-        }}
-      >
-        {/* Full-width container */}
-        <div className="w-full flex flex-col lg:flex-row gap-10 justify-center ">
-          <img
-            src="/images/AHPRA-Logo.png"
-            alt="AHPRA"
-            className="w-full lg:w-1/5 h-auto object-contain"
-          />
-          <img
-            src="/images/DeptVetAf-Logo.png"
-            alt="Podiatry Accreditation"
-            className="w-full lg:w-1/5 h-auto object-contain"
-          />
-          <img
-            src="/images/Medicare-Logo.png"
-            alt="Medicare"
-            className="w-full lg:w-1/5 h-auto object-contain"
-          />
-          <img
-            src="/images/Nicaps - Logo.png"
-            alt="Department of Veterans Affairs"
-            className="w-full lg:w-1/5 h-auto object-contain"
-          />
-        </div>
-      </motion.div>
+          initial={{ opacity: 0, y: 20 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, ease: "easeOut" },
+          }}
+          className="flex flex-col lg:flex-row items-center gap-10 mt-10"
+        >
+          <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+            <img
+              src="/images/AHPRA-Logo.png" // Replace with your image path
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+            <img
+              src="/images/DeptVetAf-Logo.png" // Replace with your image path
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+            <img
+              src="/images/Medicare-Logo.png" // Replace with your image path
+              alt=""
+              className="w-full h-full"
+            />
+          </div>
+
+          <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+            <img
+              src="/images/Nicaps - Logo.png" // Replace with your image path
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </motion.div>
 
       <motion.div
         className="mt-20"
