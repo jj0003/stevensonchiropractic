@@ -13,11 +13,11 @@
 }
 
 .btn-secondary {
-  @apply bg-[#0049FF] hover:bg-black tracking-wider text-xs;
+  @apply bg-[#2768ea] hover:bg-black tracking-wider text-xs;
 }
 
 .btn-tertiary {
-  @apply bg-white hover:bg-[#0049FF] tracking-wider text-xs text-black hover:text-white;
+  @apply bg-white hover:bg-[#2768ea] tracking-wider text-xs text-black hover:text-white;
 }
 
 .btn-quaternary {
