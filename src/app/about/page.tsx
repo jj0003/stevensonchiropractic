@@ -334,7 +334,7 @@ export default function About() {
             </h3>
             <p className="text-lg mt-4">
               You will have to come into our office to meet our camera shy
-              support team: Lynell, Michelle and Michelle!
+              support team: Lynell, Michelle and Tracey!
             </p>
             <p className="text-lg mt-4">
               When our team are not making our workplace run like clockwork,
