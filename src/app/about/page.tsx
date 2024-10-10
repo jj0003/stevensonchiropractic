@@ -330,7 +330,7 @@ export default function About() {
           />
           <div className="w-full lg:w-2/3">
             <h3 className="text-xl font-semibold">
-              Lynell, Michelle and Michelle
+              Lynell, Michelle and Tracey
             </h3>
             <p className="text-lg mt-4">
               You will have to come into our office to meet our camera shy
