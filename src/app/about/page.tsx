@@ -77,6 +77,7 @@ export default function About() {
         </motion.div>
 
       <motion.div
+        id="FredStevenson"
         className="mt-20"
         initial={{ opacity: 0, y: 20 }}
         animate={{
@@ -86,7 +87,7 @@ export default function About() {
         }}
       >
         {/* Title */}
-        <h5 id="FredStevenson" className="text-2xl font-semibold mb-2">
+        <h5 className="text-2xl font-semibold mb-2">
           Dr. Fred Stevenson, BSc. D.C.
         </h5>
         <hr className="border-t border-black mb-2" />
