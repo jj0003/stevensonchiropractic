@@ -50,7 +50,7 @@ export default function Contact() {
         <h2 className="text-2xl font-semibold mb-4 text-center">Our Location</h2>
         <div className="w-full h-80 rounded-lg overflow-hidden">
           <iframe
-            src="https://www.google.com/maps?q=179+Brunker+Road,+Adamstown+NSW+2289+Australia"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.228943876451!2d151.72014631531607!3d-32.93877927934865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b7315186d07b7d7%3A0x1aa9a117ae2af55b!2s179%20Brunker%20Rd%2C%20Adamstown%20NSW%202289%2C%20Australia!5e0!3m2!1sen!2sus!4v1691089458351!5m2!1sen!2sus"
             width="100%"
             height="100%"
             allowFullScreen={true}
