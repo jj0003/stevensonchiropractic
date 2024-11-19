@@ -31,7 +31,7 @@ export default function Contact() {
       >
         <h2 className="text-2xl font-semibold mb-4">Clinic Information</h2>
         <p className="text-lg">Dr. Fred Stevenson, BSc. D.C.</p>
-        <p className="text-lg">Newcastle Chiropractic Center</p>
+        <p className="text-lg">Stevenson Chiropractic Clinic</p>
         <p className="text-lg">179 Brunker Road, Adamstown NSW 2289 Australia</p>
         <p className="text-lg">Phone: (02) 4956 1144</p>
         <p className="text-lg">Email: fas@stevensonchiropractic.com.au</p>
