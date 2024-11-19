@@ -86,7 +86,7 @@ export default function About() {
         }}
       >
         {/* Title */}
-        <h5 className="text-2xl font-semibold mb-2">
+        <h5 id="FredStevenson" className="text-2xl font-semibold mb-2">
           Dr. Fred Stevenson, BSc. D.C.
         </h5>
         <hr className="border-t border-black mb-2" />

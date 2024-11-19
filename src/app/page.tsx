@@ -114,7 +114,7 @@ export default function Home() {
 
   {/* Overlay Buttons */}
   <div className="absolute bottom-4 right-4 flex flex-row gap-2.5">
-    <Link href="/call-us" className="btn-extra group">
+    <Link href="/contact" className="btn-extra group">
       <div className="flex flex-col justify-between h-full">
         <span className="text-left font-bold text-white">Call us now</span>
         <svg

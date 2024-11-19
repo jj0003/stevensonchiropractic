@@ -278,7 +278,7 @@ We believe that during your care, the patient should be educated by their Chirop
             <p className="text-lg mt-4">
             Enhances muscle recovery and releases stress and tension.
             </p>
-            <Link href="/about" passHref>
+            <Link href="/about#FredStevenson" passHref>
               <button className="btn btn-secondary mt-6">
                 {" "}
                 {/* Add margin here */}
