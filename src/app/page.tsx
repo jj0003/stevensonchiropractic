@@ -134,7 +134,7 @@ export default function Home() {
     </Link>
 
     <Link
-      href="https://my-pod-family-and-sports-podiatry.au3.cliniko.com/bookings?business_id=728271673064693041&practitioner_id=728286191547326094#service"
+      href="https://my-pod-family-and-sports-podiatry.au3.cliniko.com/bookings?business_id=728271673064693041"
       className="btn-extra-black group"
       target="_blank"
       rel="noopener noreferrer"
