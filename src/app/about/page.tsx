@@ -18,7 +18,7 @@ export default function About() {
         <img
           src="/images/Spine - About Hero.jpg"
           alt="Spine"
-          className="hidden md:block w-full h-auto rounded-lg object-cover max-h-[500px]" // Crops the height on desktop without distortion
+          className="hidden md:block w-full h-auto rounded-lg object-cover max-h-[1000px]" // Crops the height on desktop without distortion
         />
 
         {/* Vertical Cropped Image for Mobile */}
@@ -35,46 +35,46 @@ export default function About() {
 
       {/* Accreditations */}
       <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.8, ease: "easeOut" },
-          }}
-          className="flex flex-col lg:flex-row items-center gap-10 mt-10"
-        >
-          <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
-            <img
-              src="/images/AHPRA-Logo.png" // Replace with your image path
-              alt=""
-              className="w-full h-full object-cover"
-            />
-          </div>
+        initial={{ opacity: 0, y: 20 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.8, ease: "easeOut" },
+        }}
+        className="flex flex-col lg:flex-row items-center gap-10 mt-10"
+      >
+        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+          <img
+            src="/images/AHPRA-Logo.png" // Replace with your image path
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-          <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
-            <img
-              src="/images/DeptVetAf-Logo.png" // Replace with your image path
-              alt=""
-              className="w-full h-full object-cover"
-            />
-          </div>
+        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+          <img
+            src="/images/DeptVetAf-Logo.png" // Replace with your image path
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-          <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
-            <img
-              src="/images/Medicare-Logo.png" // Replace with your image path
-              alt=""
-              className="w-full h-full"
-            />
-          </div>
+        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+          <img
+            src="/images/Medicare-Logo.png" // Replace with your image path
+            alt=""
+            className="w-full h-full"
+          />
+        </div>
 
-          <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
-            <img
-              src="/images/Nicaps - Logo.png" // Replace with your image path
-              alt=""
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </motion.div>
+        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+          <img
+            src="/images/Nicaps - Logo.png" // Replace with your image path
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </motion.div>
 
       <motion.div
         id="FredStevenson"
@@ -87,9 +87,7 @@ export default function About() {
         }}
       >
         {/* Title */}
-        <h5 className="text-2xl font-semibold mb-2">
-          Dr. Fred Stevenson, BSc. D.C.
-        </h5>
+        <h5 className="text-2xl font-semibold mb-2">Meet Our Chiropractors</h5>
         <hr className="border-t border-black mb-2" />
       </motion.div>
 
@@ -104,13 +102,55 @@ export default function About() {
           }}
           className="flex flex-col lg:flex-row items-center gap-10 "
         >
+          <div className="w-full lg:w-2/3">
+            <h3 className="text-xl font-semibold">Dr. Joseph Bradshaw</h3>
+            <p className="text-lg mt-4">
+              Joseph completed his Bachelor and Master of Chiropractic degrees
+              at Macquarie University in 2019. His main passion is athletics,
+              specifically sprinting, training three days a week both on the
+              track and in the gym. He has worked as a chiropractor in several
+              clinics throughout Sydney and Newcastle and has had experience
+              working with athletes both in training and at competitions. His
+              aim is to help anyone who comes to him to move and function well.
+            </p>
+            <p className="text-lg mt-4">
+              When not working or training Joseph enjoys being with his German
+              Shepherd dog. He also likes board games, computer games, reading
+              and settling down in the evening with a wholesome TV show or
+              movie.
+            </p>
+            <p className="text-lg mt-4">
+              Joseph went to the Philippines in 2014 to help aid the local
+              community who were affected by Typhoon Haiyan. He has volunteered
+              regularly at a community kitchen for the homeless and others in
+              need.
+            </p>
+          </div>
+          <img
+            src="/images/Dr Fred Stevenson.jpg" // Replace with your image path
+            alt="Education"
+            className="w-full lg:w-1/3 h-auto object-cover rounded-lg"
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, ease: "easeOut" },
+          }}
+          className="flex flex-col lg:flex-row items-center gap-10 mt-10"
+        >
           <img
             src="/images/Dr Fred Stevenson.jpg" // Replace with your image path
             alt="Education"
             className="w-full lg:w-1/3 h-auto object-cover rounded-lg"
           />
           <div className="w-full lg:w-2/3">
-            <h3 className="text-xl font-semibold">About Dr. Fred Stevenson</h3>
+            <h3 className="text-xl font-semibold">
+              Dr. Fred Stevenson, BSc. D.C.
+            </h3>
             <p className="text-lg mt-4">
               Dr. Fred Stevenson graduated from university in Canada and
               relocated to Australia, where he worked as a locum for 3 years.
@@ -131,7 +171,6 @@ export default function About() {
             </p>
           </div>
         </motion.div>
-
 
         <h3 className="text-xl font-semibold mt-14 mb-4">Career Highlights</h3>
 
@@ -223,8 +262,6 @@ export default function About() {
           </div>
         </motion.div>
 
-
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{
@@ -234,11 +271,10 @@ export default function About() {
           }}
           className="flex flex-col lg:flex-row items-start lg:gap-10 mt-4"
         >
-                  
           <div className="w-full">
-          <h3 className="text-xl font-semibold mt-10 mb-4">
-          Enjoying an Active Family Life{" "}
-        </h3>
+            <h3 className="text-xl font-semibold mt-10 mb-4">
+              Enjoying an Active Family Life{" "}
+            </h3>
             <p className="text-lg mt-4">
               Current weekly activities include ice hockey (it&apos;s the
               Canadian in him), golf, running, tennis, cycling, kayaking,

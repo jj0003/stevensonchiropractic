@@ -5,7 +5,7 @@ import "./globals.css";
 import "@radix-ui/themes/styles.css";
 import "./fonts.css";
 import SmoothScrolling from "@/components/SmoothScrolling";
-import Navigation from "@/components/navigation"; // Adjust the import path if necessary
+import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {

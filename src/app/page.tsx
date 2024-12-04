@@ -73,91 +73,100 @@ export default function Home() {
 
   return (
     <div>
+
+      {/* Image with Overlay Buttons */}
       <motion.div
-  className=""
-  initial={{ opacity: 0, y: 20 }}
-  animate={{
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
-  }}
->
-  <h1 className="lg:text-7xl md:text-6xl text-4xl uppercase satoshi-regular">
-    Start your journey to better health and reduction of pain today!
-  </h1>
-</motion.div>
+        className="relative mt-10"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { duration: 0.8, ease: "easeOut", delay: 0.2 },
+        }}
+      >
+        {/* Rounded Image for Desktop/Tablet */}
+        <img
+          src="/images/Spine - About Hero.jpg"
+          alt="Spine"
+          className="hidden md:block w-full h-auto rounded-lg object-cover max-h-[600px]" // Crops the height on desktop without distortion
+        />
 
-{/* Image with Overlay Buttons */}
-<motion.div
-  className="relative mt-10"
-  initial={{ opacity: 0 }}
-  animate={{
-    opacity: 1,
-    transition: { duration: 0.8, ease: "easeOut", delay: 0.2 },
-  }}
->
-  {/* Rounded Image for Desktop/Tablet */}
-  <div className="hidden md:block w-full h-[1000px] overflow-hidden rounded-lg">
-    <img
-      src="/images/Dr Fred Stevenson - Neck Adjustment.jpg"
-      alt="Chiropractic Care"
-      className="w-full h-full object-cover object-center"
-    />
-  </div>
-  
-  {/* Rounded Image for Mobile */}
-  <img
-    src="/images/Dr Fred Stevenson - Neck Adjustment.jpg"
-    alt="Chiropractic Care"
-    className="block md:hidden w-full h-auto rounded-lg"
-  />
+        {/* Rounded Image for Mobile */}
+        <img
+          src="/images/Dr Fred Stevenson - Neck Adjustment.jpg"
+          alt="Chiropractic Care"
+          className="block md:hidden w-full h-auto rounded-lg"
+        />
 
-  {/* Overlay Buttons */}
-  <div className="absolute bottom-4 right-4 flex flex-row gap-2.5">
-    <Link href="/contact" className="btn-extra group">
-      <div className="flex flex-col justify-between h-full">
-        <span className="text-left font-bold text-white">Call us now</span>
-        <svg
-          className="w-6 h-6 text-white transform transition-transform duration-300 group-hover:translate-x-2"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M13 7l5 5m0 0l-5 5m5-5H6"
-          />
-        </svg>
-      </div>
-    </Link>
+      </motion.div>
 
-    <Link
-      href="https://my-pod-family-and-sports-podiatry.au3.cliniko.com/bookings?business_id=728271673064693041"
-      className="btn-extra-black group"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className="flex flex-col justify-between h-full">
-        <span className="text-left font-bold text-white">Book online</span>
-        <svg
-          className="w-6 h-6 text-white transform transition-transform duration-300 group-hover:translate-x-2"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M13 7l5 5m0 0l-5 5m5-5H6"
-          />
-        </svg>
-      </div>
-    </Link>
-  </div>
-</motion.div>
+      <motion.div
+        className=""
+        initial={{ opacity: 0, y: 20 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.8, ease: "easeOut" },
+        }}
+      >
+        <h1 className="font-extrabold lg:text-7xl md:text-6xl text-4xl satoshi-bold uppercase text-center mt-8">
+          Start your journey to better health and reduction of pain today!
+        </h1>
+        <p className="satoshi mt-5 text-center lg:text-3xl md:text-2xl text-xl">
+          At Stevenson Chiropractic, our team is here to help you live your best life possible with natural, gentle, focused chiropractic care. Discover how incredible you can feel today!
+          </p>
+
+        <div className="flex flex-row gap-10 mt-10 justify-center">
+        <Link href="/contact" className="btn-extra group">
+            <div className="flex flex-col justify-between h-full">
+              <span className="text-left font-bold text-white">
+                Call us now
+              </span>
+              <svg
+                className="w-6 h-6 text-white transform transition-transform duration-300 group-hover:translate-x-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </div>
+          </Link>
+          <Link
+            href="https://my-pod-family-and-sports-podiatry.au3.cliniko.com/bookings?business_id=728271673064693041"
+            className="btn-extra-black group"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex flex-col justify-between h-full">
+              <span className="text-left font-bold text-white">
+                Book online
+              </span>
+              <svg
+                className="w-6 h-6 text-white transform transition-transform duration-300 group-hover:translate-x-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </div>
+          </Link>
+          
+        </div>
+        
+        
+          
+      </motion.div>
 
       <motion.div
         className="mt-20"
@@ -175,18 +184,18 @@ export default function Home() {
         {/* Testimonials */}
         <div className="flex flex-col lg:flex-row gap-10 w-full">
           <h4 className="flex-1">
-            &quot;Been going here for years and wouldn&apos;t go anywhere else. Fred is a
-            genius.&quot;
+            &quot;Been going here for years and wouldn&apos;t go anywhere else.
+            Fred is a genius.&quot;
           </h4>
           <h4 className="flex-1">
-          &quot;As a Polio survivor, I depend on Fred to keep me mobile. I always
-            leave his place feeling better and happier.&quot;
+            &quot;As a Polio survivor, I depend on Fred to keep me mobile. I
+            always leave his place feeling better and happier.&quot;
           </h4>
           <h4 className="flex-1">
-          &quot;Excellent practitioner... I would highly recommend.&quot;
+            &quot;Excellent practitioner... I would highly recommend.&quot;
           </h4>
           <h4 className="flex-1">
-          &quot;Dr. Fred is a legend. Thanks for your magic hands and caring
+            &quot;Dr. Fred is a legend. Thanks for your magic hands and caring
             nature.&quot;
           </h4>
         </div>
@@ -218,7 +227,9 @@ export default function Home() {
               his son is a chiropractor and surgeon.
             </p>
             <Link href="/about" passHref>
-              <button className="btn btn-secondary mt-6"> {/* Add margin here */}
+              <button className="btn btn-secondary mt-6">
+                {" "}
+                {/* Add margin here */}
                 Discover More About Dr Fred Stevenson
               </button>
             </Link>
@@ -261,7 +272,9 @@ export default function Home() {
               discomfort, and paediatric issues.
             </p>
             <Link href="/about" passHref>
-              <button className="btn btn-secondary mt-6"> {/* Add margin here */}
+              <button className="btn btn-secondary mt-6">
+                {" "}
+                {/* Add margin here */}
                 Discover More About Dr Fred Stevenson
               </button>
             </Link>
@@ -303,7 +316,9 @@ export default function Home() {
               education requirements for membership.
             </p>
             <Link href="/about" passHref>
-              <button className="btn btn-secondary mt-6"> {/* Add margin here */}
+              <button className="btn btn-secondary mt-6">
+                {" "}
+                {/* Add margin here */}
                 Discover More About Dr Fred Stevenson
               </button>
             </Link>
@@ -313,7 +328,7 @@ export default function Home() {
 
       {/* Project Showcase */}
       <h5 className="text-2xl font-semibold mb-2 mt-10">Our Services</h5>
-        <hr className="border-t border-black mb-8" />
+      <hr className="border-t border-black mb-8" />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
         {projects.map((item) => {
           const imageUrl = item.attributes.images?.data?.[0]?.attributes.url;
@@ -353,49 +368,48 @@ export default function Home() {
         })}
       </div>
 
-      
       {/* Accreditations */}
       <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.8, ease: "easeOut" },
-          }}
-          className="flex flex-col lg:flex-row items-center gap-10 mt-10"
-        >
-          <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
-            <img
-              src="/images/AHPRA-Logo.png" // Replace with your image path
-              alt=""
-              className="w-full h-full object-cover"
-            />
-          </div>
+        initial={{ opacity: 0, y: 20 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.8, ease: "easeOut" },
+        }}
+        className="flex flex-col lg:flex-row items-center gap-10 mt-10"
+      >
+        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+          <img
+            src="/images/AHPRA-Logo.png" // Replace with your image path
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-          <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
-            <img
-              src="/images/DeptVetAf-Logo.png" // Replace with your image path
-              alt=""
-              className="w-full h-full object-cover"
-            />
-          </div>
+        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+          <img
+            src="/images/DeptVetAf-Logo.png" // Replace with your image path
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-          <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
-            <img
-              src="/images/Medicare-Logo.png" // Replace with your image path
-              alt=""
-              className="w-full h-full"
-            />
-          </div>
+        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+          <img
+            src="/images/Medicare-Logo.png" // Replace with your image path
+            alt=""
+            className="w-full h-full"
+          />
+        </div>
 
-          <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
-            <img
-              src="/images/Nicaps - Logo.png" // Replace with your image path
-              alt=""
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </motion.div>
+        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+          <img
+            src="/images/Nicaps - Logo.png" // Replace with your image path
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </motion.div>
     </div>
   );
 }

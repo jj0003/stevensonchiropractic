@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -48,12 +47,12 @@ const Footer = () => {
         {/* Column 3: Opening Hours */}
         <div className="col-span-1">
           <h3 className="satoshi-bold text-lg mb-2">Opening Hours</h3>
-          <p>Monday: 8:30am – 6pm</p>
-          <p>Tuesday: 8:30am – 6pm</p>
+          <p>Monday: 8:30am – 9pm</p>
+          <p>Tuesday: 8:30am – 9pm</p>
           <p>Wednesday: 8:30am – 6pm</p>
-          <p>Thursday: Closed</p>
-          <p>Friday: 8:30am – 12pm</p>
-          <p>Weekends and Public Holidays: Closed</p>
+          <p>Thursday: 8:30am – 6pm</p>
+          <p>Friday: 8:30am – 6pm</p>
+          <p>Weekends and Public Holidays: By Appointment</p>
         </div>
       </div>
 
@@ -61,17 +60,6 @@ const Footer = () => {
       <div className="mt-10 flex flex-col md:flex-row justify-between items-center text-sm">
         {/* Copyright */}
         <p>© Stevenson Chiropractic and Podiatry Clinic 2024</p>
-
-        {/* Links */}
-        <div className="mt-4 md:mt-0">
-          <Link href="/terms-and-conditions" className="hover:text-[#0049FF]">
-            Terms & Conditions
-          </Link>{" "}
-          |{" "}
-          <Link href="/privacy-policy" className="hover:text-[#0049FF]">
-            Privacy Policy
-          </Link>
-        </div>
       </div>
     </div>
   );
