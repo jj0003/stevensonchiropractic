@@ -101,10 +101,10 @@ export default function Services() {
         </h1>
 
         <h3 className="text-center mt-2">
-        Achieving optimal health and wellness by learning to work with your body to restore mobility
+          Achieving optimal health and wellness by learning to work with your
+          body to restore mobility
         </h3>
       </motion.div>
-
 
       <motion.div
         className="mt-20"
@@ -122,22 +122,27 @@ export default function Services() {
         {/* Testimonials */}
         <div className="gap-10 w-full">
           <p className="text-xl">
-          Our clinic uses a variety of methods to help patients achieve the results they want and need. 
+            Our clinic uses a variety of methods to help patients achieve the
+            results they want and need.
           </p>
           <p className="text-xl mt-4">
-
-
-Chiropractic adjustment is our primary treatment. We use manual manipulation techniques including Diversified, Thompson Drop, and the Activator Tool, which works well for children, elders, and anyone who cannot tolerate manual adjustment.
+            Chiropractic adjustment is our primary treatment. We use manual
+            manipulation techniques including Diversified, Thompson Drop, and
+            the Activator Tool, which works well for children, elders, and
+            anyone who cannot tolerate manual adjustment.
           </p>
           <p className="text-xl mt-4">
-We also offer several adjunct services—Massage therapy, Dry Needling, Spinal Decompression, Custom Orthotics, Taping, Exercise therapy, and Dynamic Neuromuscular Stabilization. A combination of these services may be necessary to achieve the lasting results you want.
-We believe that during your care, the patient should be educated by their Chiropractor to maximise proper posture, maintain flexibility, balance and pain free living.
-
+            We also offer several adjunct services—Massage therapy, Dry
+            Needling, Spinal Decompression, Custom Orthotics, Taping, Exercise
+            therapy, and Dynamic Neuromuscular Stabilization. A combination of
+            these services may be necessary to achieve the lasting results you
+            want. We believe that during your care, the patient should be
+            educated by their Chiropractor to maximise proper posture, maintain
+            flexibility, balance and pain free living.
           </p>
         </div>
       </motion.div>
 
-      
       <motion.div
         className="mt-20"
         initial={{ opacity: 0, y: 20 }}
@@ -162,6 +167,7 @@ We believe that during your care, the patient should be educated by their Chirop
             transition: { duration: 0.8, ease: "easeOut" },
           }}
           className="flex flex-col lg:flex-row items-center gap-10"
+          id="chiropractic-care"
         >
           <img
             src="/images/Dr Fred Stevenson - Adjustment.jpg" // Replace with your image path
@@ -169,16 +175,24 @@ We believe that during your care, the patient should be educated by their Chirop
             className="w-full lg:w-1/2 h-[700px] object-cover rounded-lg"
           />
           <div className="w-full lg:w-1/2">
-            <h2 className="text-2xl font-bold">
-              Chiropractic Care
-            </h2>
+            <h2 className="text-2xl font-bold">Chiropractic Care</h2>
             <p className="text-lg mt-4">
-            Chiropractic care is a patient-centred, non-invasive, hands-on, regulated health care profession focused on your spine, muscles,  joints and nervous system.
+              Chiropractic care is a patient-centred, non-invasive, hands-on,
+              regulated health care profession focused on your spine, muscles,
+              joints and nervous system.
             </p>
             <p className="text-lg mt-4">
-            Chiropractors use the best available evidence and clinical expertise to diagnose issues that affect the movement of your body. They treat them without medication or surgery and prevent them from returning. Chiropractic care can also promote health and improve your quality of life, as well as alleviate pain.
+              Chiropractors use the best available evidence and clinical
+              expertise to diagnose issues that affect the movement of your
+              body. They treat them without medication or surgery and prevent
+              them from returning. Chiropractic care can also promote health and
+              improve your quality of life, as well as alleviate pain.
             </p>
-            <Link href="https://my-pod-family-and-sports-podiatry.au3.cliniko.com/bookings?business_id=728271673064693041&practitioner_id=728286191547326094#service" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://my-pod-family-and-sports-podiatry.au3.cliniko.com/bookings?business_id=728271673064693041&practitioner_id=728286191547326094#service"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="btn btn-secondary mt-6">
                 {" "}
                 {/* Add margin here */}
@@ -197,6 +211,7 @@ We believe that during your care, the patient should be educated by their Chirop
             transition: { duration: 0.8, ease: "easeOut" },
           }}
           className="flex flex-col lg:flex-row-reverse items-center gap-10 mt-10"
+          id="dynamic-neuromuscular-stabilisation"
         >
           <img
             src="/images/Dynamic-Neuromuscular-Stabilisation.jpg" // Replace with your image path
@@ -205,19 +220,27 @@ We believe that during your care, the patient should be educated by their Chirop
           />
           <div className="w-full lg:w-1/2">
             <h3 className="text-xl font-semibold">
-            Dynamic Neuromuscular Stabilisation
+              Dynamic Neuromuscular Stabilisation
             </h3>
 
             <p className="text-lg mt-4">
-            Encompasses the principles of developmental kinesiology during the first year of life;
+              Encompasses the principles of developmental kinesiology during the
+              first year of life;
             </p>
             <p className="text-lg mt-4">
-            Defines postural, breathing patterns, and functional joint centration from this neurodevelopmental perspective; and
+              Defines postural, breathing patterns, and functional joint
+              centration from this neurodevelopmental perspective; and
             </p>
             <p className="text-lg mt-4">
-            Derives the ideal quality of these functional stereotypes from central (neurological) programs maturing during early postural ontogenesis. 
+              Derives the ideal quality of these functional stereotypes from
+              central (neurological) programs maturing during early postural
+              ontogenesis.
             </p>
-            <Link href="https://my-pod-family-and-sports-podiatry.au3.cliniko.com/bookings?business_id=728271673064693041&practitioner_id=728286191547326094#service" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://my-pod-family-and-sports-podiatry.au3.cliniko.com/bookings?business_id=728271673064693041&practitioner_id=728286191547326094#service"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="btn btn-secondary mt-6">
                 {" "}
                 Book An Appointment Today
@@ -235,6 +258,7 @@ We believe that during your care, the patient should be educated by their Chirop
             transition: { duration: 0.8, ease: "easeOut" },
           }}
           className="flex flex-col lg:flex-row items-center gap-10 mt-10"
+          id="dry-needling"
         >
           <img
             src="/images/Dry-Needling.jpg" // Replace with your image path
@@ -244,9 +268,14 @@ We believe that during your care, the patient should be educated by their Chirop
           <div className="w-full lg:w-1/2">
             <h3 className="text-xl font-semibold">Dry Needling</h3>
             <p className="text-lg mt-4">
-            Involves the use of fine acupuncture needles inserted into the skin to aid release of myofascial trigger points.
+              Involves the use of fine acupuncture needles inserted into the
+              skin to aid release of myofascial trigger points.
             </p>
-            <Link href="https://my-pod-family-and-sports-podiatry.au3.cliniko.com/bookings?business_id=728271673064693041&practitioner_id=728286191547326094#service" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://my-pod-family-and-sports-podiatry.au3.cliniko.com/bookings?business_id=728271673064693041&practitioner_id=728286191547326094#service"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="btn btn-secondary mt-6">
                 {" "}
                 Book An Appointment Today
@@ -258,36 +287,36 @@ We believe that during your care, the patient should be educated by their Chirop
 
       {/* Right Image, Left Text */}
       <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.8, ease: "easeOut" },
-          }}
-          className="flex flex-col lg:flex-row-reverse items-center gap-10 mt-10"
-        >
-          <img
-            src="/images/Chirpractic-Care.jpg" 
-            alt="Community Care"
-            className="w-full lg:w-1/2 h-auto object-cover rounded-lg"
-          />
-          <div className="w-full lg:w-1/2">
-            <h3 className="text-xl font-semibold">
+        initial={{ opacity: 0, y: 20 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.8, ease: "easeOut" },
+        }}
+        className="flex flex-col lg:flex-row-reverse items-center gap-10 mt-10"
+        id="muscle-massage"
+      >
+        <img
+          src="/images/Chirpractic-Care.jpg"
+          alt="Community Care"
+          className="w-full lg:w-1/2 h-auto object-cover rounded-lg"
+        />
+        <div className="w-full lg:w-1/2">
+          <h3 className="text-xl font-semibold">
             Muscle Massage: Manual and/or Theragun
-            </h3>
-            <p className="text-lg mt-4">
+          </h3>
+          <p className="text-lg mt-4">
             Enhances muscle recovery and releases stress and tension.
-            </p>
-            <Link href="/about#FredStevenson" passHref>
-              <button className="btn btn-secondary mt-6">
-                {" "}
-                {/* Add margin here */}
-                Discover More About Dr Fred Stevenson
-              </button>
-            </Link>
-          </div>
-        </motion.div>
-
+          </p>
+          <Link href="/about#FredStevenson" passHref>
+            <button className="btn btn-secondary mt-6">
+              {" "}
+              {/* Add margin here */}
+              Book An Appointment Today
+            </button>
+          </Link>
+        </div>
+      </motion.div>
 
       {/* Accreditations */}
       <motion.div
@@ -297,37 +326,41 @@ We believe that during your care, the patient should be educated by their Chirop
           y: 0,
           transition: { duration: 0.8, ease: "easeOut" },
         }}
-        className="flex flex-col lg:flex-row items-center gap-10 mt-10"
+        className="flex flex-col md:flex-row items-center gap-10 mt-10 justify-center"
       >
-        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+        {/* First image */}
+        <div className="w-full sm:w-1/2 md:w-1/4 h-auto overflow-hidden rounded-lg flex justify-center">
           <img
             src="/images/AHPRA-Logo.png" // Replace with your image path
-            alt=""
-            className="w-full h-full object-cover"
+            alt="AHPRA"
+            className="w-[150px] sm:w-[180px] md:w-[220px] h-auto object-contain"
           />
         </div>
 
-        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+        {/* Second image */}
+        <div className="w-full sm:w-1/2 md:w-1/4 h-auto overflow-hidden rounded-lg flex justify-center">
           <img
             src="/images/DeptVetAf-Logo.png" // Replace with your image path
-            alt=""
-            className="w-full h-full object-cover"
+            alt="DeptVetAf"
+            className="w-[150px] sm:w-[180px] md:w-[220px] h-auto object-contain"
           />
         </div>
 
-        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+        {/* Third image */}
+        <div className="w-full sm:w-1/2 md:w-1/4 h-auto overflow-hidden rounded-lg flex justify-center">
           <img
             src="/images/Medicare-Logo.png" // Replace with your image path
-            alt=""
-            className="w-full h-full"
+            alt="Medicare"
+            className="w-[150px] sm:w-[180px] md:w-[220px] h-auto object-contain"
           />
         </div>
 
-        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+        {/* Fourth image */}
+        <div className="w-full sm:w-1/2 md:w-1/4 h-auto overflow-hidden rounded-lg flex justify-center">
           <img
             src="/images/Nicaps - Logo.png" // Replace with your image path
-            alt=""
-            className="w-full h-full object-cover"
+            alt="Nicaps"
+            className="w-[150px] sm:w-[180px] md:w-[220px] h-auto object-contain"
           />
         </div>
       </motion.div>

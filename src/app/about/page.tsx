@@ -18,7 +18,7 @@ export default function About() {
         <img
           src="/images/Spine - About Hero.jpg"
           alt="Spine"
-          className="hidden md:block w-full h-auto rounded-lg object-cover max-h-[1000px]" // Crops the height on desktop without distortion
+          className="hidden md:block w-full h-auto rounded-lg object-cover max-h-[600px]" // Crops the height on desktop without distortion
         />
 
         {/* Vertical Cropped Image for Mobile */}
@@ -28,7 +28,7 @@ export default function About() {
           className="block md:hidden w-full h-auto rounded-lg object-cover object-center max-h-[80vh]" // Crops the sides on mobile
         />
 
-        <h1 className="font-extrabold lg:text-7xl md:text-6xl text-4xl satoshi-bold uppercase text-center mt-8">
+        <h1 className="font-extrabold lg:text-7xl md:text-6xl text-4xl satoshi-bold uppercase text-center mt-10 lg:mb-20">
           Say goodbye to your pain with our experienced care
         </h1>
       </motion.div>
@@ -41,37 +41,41 @@ export default function About() {
           y: 0,
           transition: { duration: 0.8, ease: "easeOut" },
         }}
-        className="flex flex-col lg:flex-row items-center gap-10 mt-10"
+        className="flex flex-col md:flex-row items-center gap-10 mt-10 justify-center"
       >
-        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+        {/* First image */}
+        <div className="w-full sm:w-1/2 md:w-1/4 h-auto overflow-hidden rounded-lg flex justify-center">
           <img
             src="/images/AHPRA-Logo.png" // Replace with your image path
-            alt=""
-            className="w-full h-full object-cover"
+            alt="AHPRA"
+            className="w-[150px] sm:w-[180px] md:w-[220px] h-auto object-contain"
           />
         </div>
 
-        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+        {/* Second image */}
+        <div className="w-full sm:w-1/2 md:w-1/4 h-auto overflow-hidden rounded-lg flex justify-center">
           <img
             src="/images/DeptVetAf-Logo.png" // Replace with your image path
-            alt=""
-            className="w-full h-full object-cover"
+            alt="DeptVetAf"
+            className="w-[150px] sm:w-[180px] md:w-[220px] h-auto object-contain"
           />
         </div>
 
-        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+        {/* Third image */}
+        <div className="w-full sm:w-1/2 md:w-1/4 h-auto overflow-hidden rounded-lg flex justify-center">
           <img
             src="/images/Medicare-Logo.png" // Replace with your image path
-            alt=""
-            className="w-full h-full"
+            alt="Medicare"
+            className="w-[150px] sm:w-[180px] md:w-[220px] h-auto object-contain"
           />
         </div>
 
-        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+        {/* Fourth image */}
+        <div className="w-full sm:w-1/2 md:w-1/4 h-auto overflow-hidden rounded-lg flex justify-center">
           <img
             src="/images/Nicaps - Logo.png" // Replace with your image path
-            alt=""
-            className="w-full h-full object-cover"
+            alt="Nicaps"
+            className="w-[150px] sm:w-[180px] md:w-[220px] h-auto object-contain"
           />
         </div>
       </motion.div>
@@ -103,6 +107,11 @@ export default function About() {
           className="flex flex-col lg:flex-row items-center gap-10 "
         >
           <div className="w-full lg:w-2/3">
+            <img
+              src="/images/Dr Fred Stevenson.jpg"
+              alt="Education"
+              className="w-full lg:w-1/3 h-auto object-cover rounded-lg block lg:hidden gap-10 mb-5"
+            />
             <h3 className="text-xl font-semibold">Dr. Joseph Bradshaw</h3>
             <p className="text-lg mt-4">
               Joseph completed his Bachelor and Master of Chiropractic degrees
@@ -129,7 +138,7 @@ export default function About() {
           <img
             src="/images/Dr Fred Stevenson.jpg" // Replace with your image path
             alt="Education"
-            className="w-full lg:w-1/3 h-auto object-cover rounded-lg"
+            className="w-full lg:w-1/3 h-auto object-cover rounded-lg hidden lg:block"
           />
         </motion.div>
 
@@ -140,7 +149,7 @@ export default function About() {
             y: 0,
             transition: { duration: 0.8, ease: "easeOut" },
           }}
-          className="flex flex-col lg:flex-row items-center gap-10 mt-10"
+          className="flex flex-col lg:flex-row items-center gap-5 mt-10"
         >
           <img
             src="/images/Dr Fred Stevenson.jpg" // Replace with your image path

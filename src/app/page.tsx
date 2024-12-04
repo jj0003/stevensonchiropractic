@@ -8,7 +8,7 @@ export default function Home() {
     {
       id: 1,
       attributes: {
-        slug: "chiropractic-care",
+        slug: "#chiropractic-care",
         title: "Chiropractic Care",
         images: {
           data: [
@@ -24,7 +24,7 @@ export default function Home() {
     {
       id: 2,
       attributes: {
-        slug: "dry-needling",
+        slug: "#dry-needling",
         title: "Dry Needling",
         images: {
           data: [
@@ -40,7 +40,7 @@ export default function Home() {
     {
       id: 3,
       attributes: {
-        slug: "dynamic-neuromuscular-stabilisation",
+        slug: "#dynamic-neuromuscular-stabilisation",
         title: "Dynamic Neuromuscular Stabilisation",
         images: {
           data: [
@@ -56,7 +56,7 @@ export default function Home() {
     {
       id: 4,
       attributes: {
-        slug: "muscle-massage",
+        slug: "#muscle-massage",
         title: "Muscle Massage",
         images: {
           data: [
@@ -334,7 +334,7 @@ export default function Home() {
           const imageUrl = item.attributes.images?.data?.[0]?.attributes.url;
 
           return (
-            <Link key={item.id} href={`/work/${item.attributes.slug}`} passHref>
+            <Link key={item.id} href={`/services${item.attributes.slug}`} passHref>
               <motion.div
                 className="relative bg-cover bg-center rounded-lg h-64 flex flex-col justify-end transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-0 active:translate-y-0 active:rounded-lg active:shadow-none"
                 style={{ backgroundImage: `url(${imageUrl})` }}
@@ -376,37 +376,41 @@ export default function Home() {
           y: 0,
           transition: { duration: 0.8, ease: "easeOut" },
         }}
-        className="flex flex-col lg:flex-row items-center gap-10 mt-10"
+        className="flex flex-col md:flex-row items-center gap-10 mt-10 justify-center"
       >
-        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+        {/* First image */}
+        <div className="w-full sm:w-1/2 md:w-1/4 h-auto overflow-hidden rounded-lg flex justify-center">
           <img
             src="/images/AHPRA-Logo.png" // Replace with your image path
-            alt=""
-            className="w-full h-full object-cover"
+            alt="AHPRA"
+            className="w-[150px] sm:w-[180px] md:w-[220px] h-auto object-contain"
           />
         </div>
 
-        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+        {/* Second image */}
+        <div className="w-full sm:w-1/2 md:w-1/4 h-auto overflow-hidden rounded-lg flex justify-center">
           <img
             src="/images/DeptVetAf-Logo.png" // Replace with your image path
-            alt=""
-            className="w-full h-full object-cover"
+            alt="DeptVetAf"
+            className="w-[150px] sm:w-[180px] md:w-[220px] h-auto object-contain"
           />
         </div>
 
-        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+        {/* Third image */}
+        <div className="w-full sm:w-1/2 md:w-1/4 h-auto overflow-hidden rounded-lg flex justify-center">
           <img
             src="/images/Medicare-Logo.png" // Replace with your image path
-            alt=""
-            className="w-full h-full"
+            alt="Medicare"
+            className="w-[150px] sm:w-[180px] md:w-[220px] h-auto object-contain"
           />
         </div>
 
-        <div className="w-full lg:w-1/4 h-auto overflow-hidden rounded-lg">
+        {/* Fourth image */}
+        <div className="w-full sm:w-1/2 md:w-1/4 h-auto overflow-hidden rounded-lg flex justify-center">
           <img
             src="/images/Nicaps - Logo.png" // Replace with your image path
-            alt=""
-            className="w-full h-full object-cover"
+            alt="Nicaps"
+            className="w-[150px] sm:w-[180px] md:w-[220px] h-auto object-contain"
           />
         </div>
       </motion.div>
