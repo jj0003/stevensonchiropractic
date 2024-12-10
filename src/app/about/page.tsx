@@ -136,7 +136,7 @@ export default function About() {
             </p>
           </div>
           <img
-            src="/images/Dr Fred Stevenson.jpg" // Replace with your image path
+            src="/images/Joseph Bradshaw.jpeg" // Replace with your image path
             alt="Education"
             className="w-full lg:w-1/3 h-auto object-cover rounded-lg hidden lg:block"
           />
