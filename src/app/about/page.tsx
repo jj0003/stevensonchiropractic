@@ -108,7 +108,7 @@ export default function About() {
         >
           <div className="w-full lg:w-2/3">
             <img
-              src="/images/Dr Fred Stevenson.jpg"
+              src="/images/Joseph Bradshaw.jpeg"
               alt="Education"
               className="w-full lg:w-1/3 h-auto object-cover rounded-lg block lg:hidden gap-10 mb-5"
             />
