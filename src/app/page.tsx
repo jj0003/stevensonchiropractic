@@ -219,7 +219,7 @@ export default function Home() {
           />
           <div className="w-full lg:w-1/2">
             <h2 className="text-2xl font-bold">
-              Stevenson Chiropractic Clinic
+              Dr. Fred Stevenson, BSc. D.C.
             </h2>
             <p className="text-lg mt-4">
               Dr Fred Stevenson is a second-generation chiropractor; his 3 other
@@ -245,6 +245,37 @@ export default function Home() {
             transition: { duration: 0.8, ease: "easeOut" },
           }}
           className="flex flex-col lg:flex-row-reverse items-center gap-10 mt-10"
+        >
+          <img
+            src="/images/Joseph Bradshaw - Stevenson Chiropractic.jpg" // Replace with your image path
+            alt="Community Care"
+            className="w-full lg:w-1/2 h-auto object-cover rounded-lg"
+          />
+          <div className="w-full lg:w-1/2">
+            <h3 className="text-xl font-semibold">Dr Joseph Bradshaw</h3>
+            <p className="text-lg mt-4">
+              Dr Joseph Bradshaw is a dedicated chiropractor looking to help you achieve your health outcomes.
+            </p>
+            <Link href="/about" passHref>
+              <button className="btn btn-secondary mt-6">
+                {" "}
+                {/* Add margin here */}
+                Discover More About Dr Joe Bradshaw
+              </button>
+            </Link>
+          </div>
+        </motion.div>
+
+
+        {/* Right Image, Left Text */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, ease: "easeOut" },
+          }}
+          className="flex flex-col lg:flex-row items-center gap-10 mt-10"
         >
           <img
             src="/images/Newcastle Team.png" // Replace with your image path
@@ -289,7 +320,7 @@ export default function Home() {
             y: 0,
             transition: { duration: 0.8, ease: "easeOut" },
           }}
-          className="flex flex-col lg:flex-row items-center gap-10 mt-10"
+          className="flex flex-col lg:flex-row-reverse items-center gap-10 mt-10"
         >
           <img
             src="/images/Dr Fred Stevenson.jpg" // Replace with your image path

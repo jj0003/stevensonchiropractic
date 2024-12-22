@@ -96,7 +96,48 @@ export default function About() {
       </motion.div>
 
       <div className="mt-10">
-        {/* About Dr Fred Stevenson */}
+        
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, ease: "easeOut" },
+          }}
+          className="flex flex-col lg:flex-row items-center gap-5 mt-10"
+        >
+          <img
+            src="/images/Dr Fred Stevenson.jpg" // Replace with your image path
+            alt="Education"
+            className="w-full lg:w-1/3 h-auto object-cover rounded-lg"
+          />
+          <div className="w-full lg:w-2/3">
+            <h3 className="text-xl font-semibold">
+              Dr. Fred Stevenson, BSc. D.C.
+            </h3>
+            <p className="text-lg mt-4">
+              Dr. Fred Stevenson graduated from university in Canada and
+              relocated to Australia, where he worked as a locum for 3 years.
+              After meeting his wife, he settled in Newcastle and opened his own
+              practice in 1985.
+            </p>
+            <p className="text-lg mt-4">
+              Dr. Stevenson has served as the President of the NSW branch of the
+              Australian Chiropractic Association and chaired its ethics and
+              continuing education portfolios. He has lectured at the University
+              of Newcastle and participated in interview panels for
+              undergraduate medical students.
+            </p>
+            <p className="text-lg mt-4">
+              Additionally, he has provided chiropractic care for coal miners
+              and served as the team chiropractor for the Newcastle North Stars
+              since 2000.
+            </p>
+          </div>
+        </motion.div>
+
+        {/* About Dr Joseph Bradshaw */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{
@@ -142,46 +183,7 @@ export default function About() {
           />
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.8, ease: "easeOut" },
-          }}
-          className="flex flex-col lg:flex-row items-center gap-5 mt-10"
-        >
-          <img
-            src="/images/Dr Fred Stevenson.jpg" // Replace with your image path
-            alt="Education"
-            className="w-full lg:w-1/3 h-auto object-cover rounded-lg"
-          />
-          <div className="w-full lg:w-2/3">
-            <h3 className="text-xl font-semibold">
-              Dr. Fred Stevenson, BSc. D.C.
-            </h3>
-            <p className="text-lg mt-4">
-              Dr. Fred Stevenson graduated from university in Canada and
-              relocated to Australia, where he worked as a locum for 3 years.
-              After meeting his wife, he settled in Newcastle and opened his own
-              practice in 1985.
-            </p>
-            <p className="text-lg mt-4">
-              Dr. Stevenson has served as the President of the NSW branch of the
-              Australian Chiropractic Association and chaired its ethics and
-              continuing education portfolios. He has lectured at the University
-              of Newcastle and participated in interview panels for
-              undergraduate medical students.
-            </p>
-            <p className="text-lg mt-4">
-              Additionally, he has provided chiropractic care for coal miners
-              and served as the team chiropractor for the Newcastle North Stars
-              since 2000.
-            </p>
-          </div>
-        </motion.div>
-
-        <h3 className="text-xl font-semibold mt-14 mb-4">Career Highlights</h3>
+        <h3 className="text-xl font-semibold mt-14 mb-4">Career Highlights of Dr Fred Stevenson</h3>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -191,9 +193,9 @@ export default function About() {
             transition: { duration: 0.8, ease: "easeOut" },
           }}
           className="flex flex-col lg:flex-row items-start lg:gap-10"
-        >
+        > 
           <div className="w-full lg:w-1/2">
-            <ul className="list-disc list-inside text-lg">
+            <ul className="list-  disc list-inside text-lg">
               <li>
                 Helped initiate the setup of Hands on Health Clinic in Newcastle
                 to give free treatment to homeless and disadvantaged people.
