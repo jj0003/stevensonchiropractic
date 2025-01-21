@@ -7,6 +7,7 @@ import "./fonts.css";
 import SmoothScrolling from "@/components/SmoothScrolling";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Stevensonchiropractic",
@@ -28,6 +29,7 @@ export default function RootLayout({
       >
         <SmoothScrolling>
           <Navigation />
+          <Analytics/>
           <div style={{ padding: "20px" }}>{children}</div>
           <Footer />
         </SmoothScrolling>
