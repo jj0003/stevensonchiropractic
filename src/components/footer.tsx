@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -57,9 +58,23 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom Section */}
-      <div className="mt-10 flex flex-col md:flex-row justify-between items-center text-sm">
+      <div className="mt-10 flex flex-col md:flex-row justify-between items-center text-lg gap-4">
         {/* Copyright */}
         <p>© Stevenson Chiropractic and Podiatry Clinic 2024</p>
+        <div className="flex gap-4">
+          <Link
+            className="hover:text-[#0049FF]"
+            href="https://www.facebook.com/stevensonchiropracticclinic/"
+          >
+            Facebook
+          </Link>
+          <Link
+            className="hover:text-[#0049FF] "
+            href="https://www.instagram.com/stevenson_chiropractic_clinic/"
+          >
+            Instagram
+          </Link>
+        </div>
       </div>
     </div>
   );

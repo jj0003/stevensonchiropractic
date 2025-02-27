@@ -76,7 +76,7 @@ export default function Home() {
 
       {/* Image with Overlay Buttons */}
       <motion.div
-        className="relative mt-10"
+        className="relative mt-2"
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
@@ -215,7 +215,7 @@ export default function Home() {
           <img
             src="/images/Dr Fred Stevenson - Adjustment.jpg" // Replace with your image path
             alt="Chiropractor"
-            className="w-full lg:w-1/2 h-[700px] object-cover rounded-lg"
+            className="w-full lg:w-1/2 h-[500px] object-cover rounded-lg"
           />
           <div className="w-full lg:w-1/2">
             <h2 className="text-2xl font-bold">
@@ -249,7 +249,7 @@ export default function Home() {
           <img
             src="/images/Joseph Bradshaw - Stevenson Chiropractic.jpg" // Replace with your image path
             alt="Community Care"
-            className="w-full lg:w-1/2 h-auto object-cover rounded-lg"
+            className="w-auto lg:w-1/2 h-auto rounded-lg"
           />
           <div className="w-full lg:w-1/2">
             <h3 className="text-xl font-semibold">Dr Joseph Bradshaw</h3>
