@@ -91,7 +91,7 @@ export default function About() {
         }}
       >
         {/* Title */}
-        <h5 className="text-2xl font-semibold mb-2">Meet Our Chiropractors</h5>
+        <h5 className="text-2xl font-semibold mb-2">Meet Dr. Fred Stevenson</h5>
         <hr className="border-t border-black mb-2" />
       </motion.div>
 
