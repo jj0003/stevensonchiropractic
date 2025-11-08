@@ -137,51 +137,6 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* About Dr Joseph Bradshaw */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.8, ease: "easeOut" },
-          }}
-          className="flex flex-col lg:flex-row items-center gap-10 "
-        >
-          <div className="w-full lg:w-2/3">
-            <img
-              src="/images/Joseph Bradshaw.jpeg"
-              alt="Education"
-              className="w-full lg:w-1/3 h-auto object-cover rounded-lg block lg:hidden gap-10 mb-5"
-            />
-            <h3 className="text-xl font-semibold">Dr. Joseph Bradshaw</h3>
-            <p className="text-lg mt-4">
-              Joseph completed his Bachelor and Master of Chiropractic degrees
-              at Macquarie University in 2019. His main passion is athletics,
-              specifically sprinting, training three days a week both on the
-              track and in the gym. He has worked as a chiropractor in several
-              clinics throughout Sydney and Newcastle and has had experience
-              working with athletes both in training and at competitions. His
-              aim is to help anyone who comes to him to move and function well.
-            </p>
-            <p className="text-lg mt-4">
-              When not working or training Joseph enjoys being with his German
-              Shepherd dog. He also likes board games, computer games, reading
-              and settling down in the evening with a wholesome TV show or
-              movie.
-            </p>
-            <p className="text-lg mt-4">
-              Joseph went to the Philippines in 2014 to help aid the local
-              community who were affected by Typhoon Haiyan. He has volunteered
-              regularly at a community kitchen for the homeless and others in
-              need.
-            </p>
-          </div>
-          <img
-            src="/images/Joseph Bradshaw.jpeg" // Replace with your image path
-            alt="Education"
-            className="w-full lg:w-1/3 h-auto object-cover rounded-lg hidden lg:block"
-          />
-        </motion.div>
 
         <h3 className="text-xl font-semibold mt-14 mb-4">Career Highlights of Dr Fred Stevenson</h3>
 

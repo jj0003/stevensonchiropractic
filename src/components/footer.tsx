@@ -48,11 +48,11 @@ const Footer = () => {
         {/* Column 3: Opening Hours */}
         <div className="col-span-1">
           <h3 className="satoshi-bold text-lg mb-2">Opening Hours</h3>
-          <p>Monday: 8:30am – 9pm</p>
-          <p>Tuesday: 8:30am – 9pm</p>
-          <p>Wednesday: 8:30am – 6pm</p>
-          <p>Thursday: 8:30am – 6pm</p>
-          <p>Friday: 8:30am – 6pm</p>
+          <p>Monday: 1:30pm – 6:00pm</p>
+          <p>Tuesday: 8:30am – 6:00pm</p>
+          <p>Wednesday: 8:30am – 6:00pm</p>
+          <p>Thursday: Closed</p>
+          <p>Friday: 8:30am – 12:00pm</p>
           <p>Weekends and Public Holidays: By Appointment</p>
         </div>
       </div>
